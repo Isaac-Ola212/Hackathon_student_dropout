@@ -1,72 +1,107 @@
+# Factors Influencing Student Dropout
+
+**Student Dropout Analysis** This project looks at factors influencing student dropout rates in secondary education. It includes demographic information, academic performance, and social conditions that may contribute to a student's likelihood of dropping out.
+
 # ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-## Template Instructions
 
-Welcome,
+## Dataset Content
+* This dataset was taken from Kaggle and contains anonymised personal information. https://www.kaggle.com/datasets/meharshanali/student-dropout-prediction-dataset
 
-This is the Code Institute student template for the Data Analytics capstone project. We have preinstalled all of the tools you need to get started. It's perfectly okay to use this template as the basis for your project submissions. Click the `Use this template` button above to get started.
+## Business Requirements
 
-You can safely delete the Template Instructions section of this README.md file and modify the remaining paragraphs for your own project. Please do read the Template Instructions at least once, though! It contains some important information about the IDE and the extensions we use.
+* BR1: Student Performances
+• Examine the correlation between attendance rate, daily study hours, scholarship status, and GPA.
+• Evaluate whether students receiving scholarships demonstrate higher academic performance.
+• Present data relationships using appropriate visualizations such as scatter plots (study hours per day vs. GPA) and heat maps (correlation matrix).Financial
 
-## How to use this repo
+* BR2: Student’s wellness
+•Analyse and compare stress index, travel time minutes, part time job, attendance rate
+•Visualisations such as boxplots and bar charts comparing stress index across student groups (those with/without part-time jobs)
+•Enable stakeholders (wellness tutors) to access the data to monitor a student’s wellbeing over time
 
-1. Use this template to create your GitHub project repo. Click the **Use this template** button, then click **Create a new repository**.
+* BR3: Student Biographical Profiling
+•Access to biographical and personal data such as age, gender, family income, parental education
+•Analyse should highlight demographic clusters that may benefit from targeted interventions.
+•Enable stakeholders (government employees) to have access to biographical and socioeconomic data to target outreach programs to specific student demographics.
 
-1. Copy the URL of your repository to your clipboard.
+* BR4: Predict player model
+•Develop a machine learning model to predict the likelihood of a student dropping out.
+•This should include academic, behavioural and biographical information to predict the dropout prediction per student.
+•Classification?
 
-1. In VS Code, select **File** -> **Open Folder**.
+*  BR5: Interactive Dashboard & Data Exploration
+•Develop a user-friendly dashboard specifically designed for non-technical stakeholders. This dashboard should allow users to easily explore and interact with student data, making important insights accessible regardless of technical background.
+•Incorporate filtering and segmentation features that enable users to view and categorize data based on various criteria, such as age and gender. These capabilities help stakeholders focus on specific student groups and tailor their analyses accordingly
+• For technical users, provide dedicated storytelling pages and advanced analytical tools. These should offer deeper narratives and support drill-down capabilities, allowing for more detailed exploration and understanding of the underlying data patterns.
 
-1. Select your `vscode-projects` folder, then click the **Select Folder** button on Windows, or the **Open** button on Mac.
+## Hypothesis and how to validate?
+* Hypothesis 1 – Attendance Rate and Dropout
+H₀: There is no relationship between attendance rate and student dropout.
+H₁: There is a relationship between attendance rate and student dropout.
+Test: Pearson Correlation
+In the context of the dataset: The analysis will examine whether students with lower attendance rates are more likely to drop out.
 
-1. From the top menu in VS Code, select **Terminal** > **New Terminal** to open the terminal.
+* Hypothesis 2 – Gender and Dropout
+H₀: There is no significant difference in dropout rates between male and female students.
+H₁: There is a significant difference in dropout rates between male and female students.
+Test: Independent t-test
+In the context of the dataset: The analysis will compare dropout rates between male and female students to determine if gender is associated with student dropout.
 
-1. In the terminal, type `git clone` followed by the URL of your GitHub repository. Then hit **Enter**. This command will download all the files in your GitHub repository into your vscode-projects folder.
+* Hypothesis 3 – Scholarship Status and Dropout
+H₀: Scholarship status and dropout are independent.
+H₁: Scholarship status and dropout are associated.
+Test: Chi-Square Test
+In the context of the dataset: The analysis will examine whether students with a scholarship are less likely to drop out compared to those without a scholarship.
 
-1. In VS Code, select **File** > **Open Folder** again.
+* The use of visulation tools like Matplotlib and Seaborn was used to show the factors impacting student dropout rates. Additionally, PowerBI was used to create an interactive dashboard.
 
-1. This time, navigate to and select the folder for the project you just downloaded. Then, click **Select Folder**.
+## Project Plan
+* Data collection and set up: Data was taken from Kaggle and saved as CSV file. This data was loaded in VS code.
+* Data cleaning: The data extraction, transformation and loading (ETL) was completed. The data was reveiwed for duplicates, outliers, missing values. The data cleaning was completed (processed data folder) analysis was commenced.
+* Data analysis and visualisation was completed using XXXXX. The data was presented using XXXXX
+* The kanban board link is https://github.com/users/Isaac-Ola212/projects/8
+* The interactive dashbaord page was created using PowerBI  
 
-1. A virtual environment is necessary when working with Python projects to ensure each project's dependencies are kept separate from each other. You need to create your virtual environment, also called a venv, and then ensure that it is activated any time you return to your workspace.
-Click the gear icon in the lower left-hand corner of the screen to open the Manage menu and select **Command Palette** to open the VS Code command palette.
 
-1. In the command palette, type: *create environment* and select **Python: Create Environment…**
+## The rationale to map the business requirements to the Data Visualisations
+* List your business requirements and a rationale to map them to the Data Visualisations
 
-1. Choose **Venv** from the dropdown list.
+## Analysis techniques used
+* List the data analysis methods used and explain limitations or alternative approaches.
+* How did you structure the data analysis techniques. Justify your response.
+* Did the data limit you, and did you use an alternative approach to meet these challenges?
+* How did you use generative AI tools to help with ideation, design thinking and code optimisation?
 
-1. Choose the Python version you installed earlier. Currently, we recommend Python 3.12.8
+## Ethical considerations
+* The data was sourced from Kaggle, a Google-owened online platform offering datasets, and tools to learn, practice, and collaborate on real-world data challanges.
+* The data does include personal informatipon so needs to be handled carefully and used soley for the purpose of this data analysis. The data was handled using transparent data practices.
+* Data hadling was in accordance with GDPR and ethical guidelines.
 
-1. **DO NOT** click the box next to `requirements.txt`, as you need to do more steps before you can install your dependencies. Click **OK**.
+## Dashboard Design
+* List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other item that your dashboard library supports.
+* Later, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project you were confident you would use a given plot to display an insight but subsequently you used another plot type).
+* How were data insights communicated to technical and non-technical audiences?
+* Explain how the dashboard was designed to communicate complex data insights to different audiences. 
 
-1. You will see a `.venv` folder appear in the file explorer pane to show that the virtual environment has been created.
+## Unfixed Bugs
+* Co-Pilot was used for code. 
+* Gaps in coding knowledge and AI assistance was helpful.
 
-1. **Important**: Note that the `.venv` folder is in the `.gitignore` file so that Git won't track it.
+## Development Roadmap
+* What challenges did you face, and what strategies were used to overcome these challenges?
+* What new skills or tools do you plan to learn next based on your project experience? 
 
-1. Return to the terminal by clicking on the TERMINAL tab, or click on the **Terminal** menu and choose **New Terminal** if no terminal is currently open.
 
-1. In the terminal, use the command below to install your dependencies. This may take several minutes.
+## Main Data Analysis Libraries
+* I used the following libraries for data analysis: pandas, scipy.stats, numpy, matplotlib and seaborn.
 
- ```console
- pip3 install -r requirements.txt
- ```
 
-1. Open the `jupyter_notebooks` directory, and click on the notebook you want to open.
+## Credits 
 
-1. Click the **kernel** button and choose **Python Environments**.
+* Kaggle was the source of the raw data. 
+* The use of Co-Pilot helped in generating code and providing explanations. Additionally, support was provided when required by Code Institute course monitor (Vasi) 
 
-Note that the kernel says `Python 3.12.8` as it inherits from the venv, so it will be Python-3.12.8 if that is what is installed on your PC. To confirm this, you can use the command below in a notebook code cell.
 
-```console
-! python --version
-```
-
-## Deployment Reminders
-
-* Set the `.python-version` Python version to a [Heroku-22](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version that closest matches what you used in this project.
-* The project can be deployed to Heroku using the following steps.
-
-1. Log in to Heroku and create an App
-2. At the **Deploy** tab, select **GitHub** as the deployment method.
-3. Select your repository name and click **Search**. Once it is found, click **Connect**.
-4. Select the branch you want to deploy, then click **Deploy Branch**.
-5. The deployment process should happen smoothly if all deployment files are fully functional. Click the button **Open App** at the top of the page to access your App.
-6. If the slug size is too large, then add large files not required for the app to the `.slugignore` file.
+## Acknowledgements 
+* Thank you to the Hackathon team Isaac Ola, Lena Anwar, Priya Natt, Forhad Ahmed and also Vasi for all the help during the project.
