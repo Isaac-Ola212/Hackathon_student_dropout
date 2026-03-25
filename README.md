@@ -65,7 +65,46 @@ In the context of the dataset: The analysis will examine whether students with a
 
 
 ## The rationale to map the business requirements to the Data Visualisations
-* List your business requirements and a rationale to map them to the Data Visualisations
+* The selected data visualisations were designed to directly address the defined business requirements by presenting key patterns, relationships, and trends in student data. Each visual was chosen based on its suitability for communicating specific insights in a clear and interpretable manner.
+
+BR1: Student Performance
+Visualisations Used:
+Academic Performance vs Dropout (boxplot)
+Correlation Heatmap (numeric features)
+Rationale:
+ The boxplot comparing academic performance and dropout allows for clear comparison of grade distributions between students who dropped out and those who did not. This helps identify whether lower academic performance is associated with higher dropout rates.
+The correlation heatmap provides an overview of relationships between numerical variables such as attendance, GPA, and study behaviour, helping to identify which factors are most strongly linked to academic performance.
+
+BR2: Student Wellness
+Visualisations Used:
+Attendance vs Dropout (boxplot)
+Rationale:
+ Attendance is a key indicator of student engagement and wellbeing. The boxplot highlights differences in attendance patterns between dropout and non-dropout students, helping stakeholders identify students who may be disengaged or at risk. This supports early intervention strategies for improving student wellbeing.
+
+BR3: Student Biographical Profiling
+Visualisations Used:
+Gender Distribution (countplot)
+Age Distribution (histplot)
+Department Analysis (barplot)
+Rationale:
+ These visualisations provide insight into the demographic composition of the dataset. Gender and age distributions help identify the overall structure of the student population, while department analysis highlights differences across academic groups. This enables stakeholders to identify specific demographic clusters that may require targeted support or intervention.
+
+BR4: Predictive Model (Dropout Prediction)
+Visualisations Used:
+Correlation Heatmap
+Academic Performance vs Dropout (boxplot)
+Attendance vs Dropout (boxplot)
+Rationale:
+ These visualisations support feature selection for the machine learning model by identifying variables that are strongly associated with dropout. Attendance and academic performance, in particular, were identified as key predictors and were included in the model. This ensures that the predictive model is informed by meaningful and relevant features.
+
+BR5: Interactive Dashboard & Data Exploration
+Visualisations Used:
+Dropout Distribution (countplot)
+Scholarship Status vs Dropout (barplot)
+All charts integrated into dashboard
+Rationale:
+ The dropout distribution provides a clear overview of the proportion of students at risk, making it easy for stakeholders to understand the scale of the problem. The scholarship vs dropout bar chart highlights the impact of financial support on student retention.
+These visuals were integrated into an interactive dashboard, allowing users to explore the data dynamically. The dashboard design ensures accessibility for non-technical users while still supporting deeper analysis.
 
 ## Analysis techniques used
 * Data visualisation tools (matplotlib and Seaborn) to analyse dataset and identify factors impacting student dropout.
