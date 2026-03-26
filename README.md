@@ -1,8 +1,10 @@
+# ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+
 # Factors Influencing Student Dropout
 
-**Student Dropout Analysis** This project looks at factors influencing student dropout rates in secondary education. It includes demographic information, academic performance, and social conditions that may contribute to a student's likelihood of dropping out.
+## Student Dropout Analysis
 
-# ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+This project looks at factors influencing student dropout rates in secondary education. It includes demographic information, academic performance, and social conditions that may contribute to a student's likelihood of dropping out.
 
 
 ## Dataset Content
@@ -10,98 +12,137 @@
 
 ## Business Requirements
 
-* BR1: Student Performances
-• Examine the correlation between attendance rate, daily study hours, scholarship status, and GPA.
-• Evaluate whether students receiving scholarships demonstrate higher academic performance.
-• Present data relationships using appropriate visualizations such as scatter plots (study hours per day vs. GPA) and heat maps (correlation matrix).Financial
+* BR1: Student Performances.  
 
-* BR2: Student’s wellness
-•Analyse and compare stress index, travel time minutes, part time job, attendance rate
-•Visualisations such as boxplots and bar charts comparing stress index across student groups (those with/without part-time jobs)
-•Enable stakeholders (wellness tutors) to access the data to monitor a student’s wellbeing over time
+    - Examine the correlation between attendance rate, daily study hours, scholarship status, and GPA.  
+    - Evaluate whether students receiving scholarships demonstrate higher academic performance.  
+    - Present data relationships using appropriate visualisations such as scatter plots (study hours per day vs. GPA) and heat maps (correlation matrix).  
 
-* BR3: Student Biographical Profiling
-•Access to biographical and personal data such as age, gender, family income, parental education
-•Analyse should highlight demographic clusters that may benefit from targeted interventions.
-•Enable stakeholders (government employees) to have access to biographical and socioeconomic data to target outreach programs to specific student demographics.
+* BR2: Student wellness.  
 
-* BR4: Predict player model
-•Develop a machine learning model to predict the likelihood of a student dropping out.
-•This should include academic, behavioural and biographical information to predict the dropout prediction per student.
-•Classification?
+    - Analyse and compare stress index, travel time minutes, part time job, and attendance rate.  
+    - Visualisations such as boxplots and bar charts comparing stress index across student groups (those with and without part-time jobs).  
+    - Enable stakeholders (wellness tutors) to monitor a student’s wellbeing over time.  
 
-*  BR5: Interactive Dashboard & Data Exploration
-•Develop a user-friendly dashboard specifically designed for non-technical stakeholders. This dashboard should allow users to easily explore and interact with student data, making important insights accessible regardless of technical background.
-•Incorporate filtering and segmentation features that enable users to view and categorize data based on various criteria, such as age and gender. These capabilities help stakeholders focus on specific student groups and tailor their analyses accordingly
-• For technical users, provide dedicated storytelling pages and advanced analytical tools. These should offer deeper narratives and support drill-down capabilities, allowing for more detailed exploration and understanding of the underlying data patterns.
+* BR3: Student Biographical Profiling.  
+
+    - Access to biographical and personal data such as age, gender, family income, and parental education.  
+    - The analysis should highlight demographic clusters that may benefit from targeted interventions.  
+    - Enable stakeholders (government employees) to access biographical and socioeconomic data to support outreach programs.  
+
+* BR4: Predictive model.  
+    - Develop a classification model to predict the likelihood of a student dropping out.
+    - This includes academic, behavioural, and biographical information to predict dropout per student (0 = retained, 1 = dropout).  
+
+* BR5: Interactive Dashboard & Data Exploration.  
+    - Develop a user-friendly dashboard specifically designed for non-technical stakeholders. This dashboard allows users to explore and interact with student data, making insights accessible regardless of technical background.  
+    - Incorporate filtering and segmentation features such as age, gender, and scholarship status to support targeted analysis.  
+    For technical users, include storytelling pages and drill-down capabilities for deeper data exploration.  
 
 ## Hypothesis and how to validate?
-* Hypothesis 1 – Attendance Rate and Dropout
-H₀: There is no relationship between attendance rate and student dropout.
-H₁: There is a relationship between attendance rate and student dropout.
-Test: Pearson Correlation
-In the context of the dataset: The analysis will examine whether students with lower attendance rates are more likely to drop out.
 
-* Hypothesis 2 – Gender and Dropout
-H₀: There is no significant difference in dropout rates between male and female students.
-H₁: There is a significant difference in dropout rates between male and female students.
-Test: Independent t-test
-In the context of the dataset: The analysis will compare dropout rates between male and female students to determine if gender is associated with student dropout.
+Visualisation tools such as Matplotlib and Seaborn were used to show the factors impacting student dropout rates. Additionally, Power BI was used to create an interactive dashboard.
 
-* Hypothesis 3 – Scholarship Status and Dropout
-H₀: Scholarship status and dropout are independent.
-H₁: Scholarship status and dropout are associated.
-Test: Chi-Square Test
-In the context of the dataset: The analysis will examine whether students with a scholarship are less likely to drop out compared to those without a scholarship.
+### Hypothesis 1 – Attendance Rate and Dropout  
 
-* The use of visulation tools like Matplotlib and Seaborn was used to show the factors impacting student dropout rates. Additionally, PowerBI was used to create an interactive dashboard.
+H₀: There is no relationship between attendance rate and student dropout.  
+H₁: There is a relationship between attendance rate and student dropout.  
+
+Test: Pearson Correlation  
+
+In the context of the dataset: The analysis examines whether students with lower attendance rates are more likely to drop out.  
+
+### Hypothesis 2 – Gender and Dropout  
+
+H₀: There is no significant difference in dropout rates between male and female students.  
+H₁: There is a significant difference in dropout rates between male and female students.  
+
+Test: Independent t-test  
+
+In the context of the dataset: The analysis compares dropout rates between male and female students to determine if gender is associated with dropout.  
+
+### Hypothesis 3 – Scholarship Status and Dropout  
+
+H₀: Scholarship status and dropout are independent.  
+H₁: Scholarship status and dropout are associated.  
+
+Test: Chi-Square Test  
+
+In the context of the dataset: The analysis examines whether students with a scholarship are less likely to drop out compared to those without a scholarship.  
+
+
 
 ## Project Plan
-* Data collection and set up: Data was taken from Kaggle and saved as CSV file. This data was loaded in VS code.
-* Data cleaning: The data extraction, transformation and loading (ETL) was completed. The data was reveiwed for duplicates, outliers, missing values. The data cleaning was completed (processed data folder) analysis was commenced.
-* Data analysis and visualisation was completed using XXXXX. The data was presented using XXXXX
-* The kanban board link is https://github.com/users/Isaac-Ola212/projects/8
-* The interactive dashbaord page was created using PowerBI  
+- Data collection and set up: Data was taken from Kaggle and saved as a CSV file. This data was loaded in VS Code.  
 
+- Data cleaning: The ETL process (extract, transform, load) was completed. The data was reviewed for duplicates, missing values, and inconsistencies. The cleaned dataset was saved in the processed data folder.  
+
+- Data analysis and visualisation: Analysis was completed using Matplotlib and Seaborn. The data was presented using bar charts, boxplots, and heatmaps.  
+
+- The kanban board link is https://github.com/users/Isaac-Ola212/projects/8  
+
+- The interactive dashboard page was created using Power BI  
 
 ## The rationale to map the business requirements to the Data Visualisations
-* List your business requirements and a rationale to map them to the Data Visualisations
+The selected data visualisations were designed to directly address the defined business requirements by presenting key patterns, relationships, and trends in student data. Each visual was chosen based on its suitability for communicating specific insights in a clear and interpretable manner.
+
+### BR1: Student Performance  
+
+Visualisations Used: Academic Performance vs Dropout (boxplot), Correlation Heatmap (numeric features)  
+
+Rationale: The boxplot allows comparison of academic performance between students who dropped out and those who did not. The correlation heatmap highlights relationships between variables such as attendance, GPA, and study behaviour.  
+
+### BR2: Student Wellness  
+
+Visualisations Used: Attendance vs Dropout (boxplot)  
+
+Rationale: Attendance is a key indicator of student engagement and wellbeing. The visual highlights differences between dropout and non-dropout groups, supporting early identification of disengaged students.  
+
+### BR3: Student Biographical Profiling  
+
+Visualisations Used: Gender Distribution (countplot), Age Distribution (histplot), Department Analysis (barplot)  
+
+Rationale: These visuals provide insight into the demographic composition of the dataset and help identify groups that may require targeted intervention.  
+
+### BR4: Predictive Model (Dropout Prediction)  
+
+Visualisations Used: Correlation Heatmap, Academic Performance vs Dropout, Attendance vs Dropout  
+
+Rationale: These visuals support feature selection by identifying variables strongly associated with dropout, ensuring the model is based on meaningful predictors.  
+
+### BR5: Interactive Dashboard & Data Exploration  
+
+Visualisations Used: Dropout Distribution (countplot), Scholarship Status vs Dropout (barplot), All charts integrated into dashboard  
+
+Rationale: These visuals provide a clear overview of dropout patterns. Dashboard filters allow users to explore data by gender, age, and scholarship status, supporting both high-level insights and deeper analysis.  
 
 ## Analysis techniques used
-* List the data analysis methods used and explain limitations or alternative approaches.
-* How did you structure the data analysis techniques. Justify your response.
-* Did the data limit you, and did you use an alternative approach to meet these challenges?
-* How did you use generative AI tools to help with ideation, design thinking and code optimisation?
+* Data visualisation tools (Matplotlib and Seaborn) were used to analyse the dataset and identify factors impacting student dropout.  
+
+* Statistical tests such as Pearson correlation, independent t-test, and chi-square test were applied.  
 
 ## Ethical considerations
-* The data was sourced from Kaggle, a Google-owened online platform offering datasets, and tools to learn, practice, and collaborate on real-world data challanges.
-* The data does include personal informatipon so needs to be handled carefully and used soley for the purpose of this data analysis. The data was handled using transparent data practices.
-* Data hadling was in accordance with GDPR and ethical guidelines.
+* The data was sourced from Kaggle and contains anonymised personal information.  
+* The data was handled responsibly and used only for the purpose of this analysis.  
+* Data handling followed GDPR guidelines and ethical data practices.  
 
 ## Dashboard Design
-* List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other item that your dashboard library supports.
-* Later, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project you were confident you would use a given plot to display an insight but subsequently you used another plot type).
-* How were data insights communicated to technical and non-technical audiences?
-* Explain how the dashboard was designed to communicate complex data insights to different audiences. 
+* The dashboard was developed using Power BI to support understanding of factors influencing student dropout.  
+* It includes charts and filters that allow users to explore data by gender, age, and scholarship status, with drill-down features for deeper analysis.  
 
 ## Unfixed Bugs
-* Co-Pilot was used for code. 
-* Gaps in coding knowledge and AI assistance was helpful.
+* Minor issues related to GitHub workflow and environment setup were encountered and resolved during development.  
 
 ## Development Roadmap
-* What challenges did you face, and what strategies were used to overcome these challenges?
-* What new skills or tools do you plan to learn next based on your project experience? 
-
+* Improvements were made in GitHub workflow, debugging, and data analysis processes throughout the project.  
+* Support from tutors and tools such as Copilot helped refine the implementation.  
 
 ## Main Data Analysis Libraries
-* I used the following libraries for data analysis: pandas, scipy.stats, numpy, matplotlib and seaborn.
-
+* pandas, scipy.stats, numpy, matplotlib, seaborn  
 
 ## Credits 
-
-* Kaggle was the source of the raw data. 
-* The use of Co-Pilot helped in generating code and providing explanations. Additionally, support was provided when required by Code Institute course monitor (Vasi) 
-
+* Kaggle was the source of the raw data.  
+* Copilot assisted with code generation and explanations. Support was also provided by the Code Institute course monitor.  
 
 ## Acknowledgements 
-* Thank you to the Hackathon team Isaac Ola, Lena Anwar, Priya Natt, Forhad Ahmed and also Vasi for all the help during the project.
+* Thank you to the Hackathon team Isaac Ola, Lena Anwar, Priya Natt, Forhad Ahmed and Vasi for their support during the project.
